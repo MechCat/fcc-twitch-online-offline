@@ -1,0 +1,160 @@
+:root{  /*color scale*/
+  --offColor:  #D68484;
+  --onColor:   #9ddb93;
+  --twitchPurple: #6441A4;
+  --lightPurple: #beaaff;
+  --darkPurple: #201c2b;
+  --allColor: cornflowerblue;
+}
+
+body {
+  background: #201c2b;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tabs {
+  margin: auto;
+  margin-top: 10px;
+  width: 1000px;
+  background-color: var(--twitchPurple);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 20px;
+  padding: 0px 20px;
+}
+
+.allTab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 5px;
+  border-radius: 5px;
+
+}
+
+.allTab:hover {
+  background-color: var(--allColor);
+  cursor: pointer;
+}
+
+.onTab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.onTab:hover {
+  background-color: var(--onColor);
+  cursor: pointer;
+}
+
+.offTab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.offTab:hover {
+  background-color: var(--offColor);
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  border: solid 1px white;
+  align-self: center;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.cAll {
+  background-color: var(--allColor);
+}
+
+.cOn {
+  background-color: var(--onColor);
+}
+
+.cOff {
+  background-color: var(--offColor);
+}
+
+.wrapper {
+  background: var(--lightPurple);
+  width: 1000px;
+  margin: auto;
+  padding: 1px;
+}
+
+.onChannels{
+  margin: 10px;
+}
+.offChannels{
+  margin: 10px;
+}
+
+.onStream{
+  background-color: var(--onColor);
+  text-align: center;
+  display: grid;
+  margin-bottom: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 50px;
+  grid-template-areas: "l t t t t t"
+                       "l s s s s s";
+}
+.offStream{
+  background-color: var(--offColor);
+  text-align: center;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 50px;
+  grid-template-areas: "l t t t t t"
+                       "l s s s s s";
+}
+
+.strlogo{
+  border-radius: 50%;
+  border: 5px solid var(--twitchPurple);
+  grid-area: l;
+  margin: auto;
+}
+
+.strTitle{
+  font-size: 24px;
+  color: var(--darkPurple);
+  font-weight: bold;
+  grid-area: t;
+  margin: auto;
+}
+
+.strSubtitle{
+  color: var(--darkPurple);
+  font-style: italic;
+  grid-area: s;
+  margin: auto;
+}
+
+.tlogo {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.tlogo:hover {
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.onStream:hover{
+  background-color: #76a56f;
+}
+.offStream:hover{
+  background-color: #bb7575;
+}
