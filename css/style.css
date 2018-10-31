@@ -158,3 +158,10 @@ a:hover{
 .offStream:hover{
   background-color: #bb7575;
 }
+.addButton {
+  font-weight: bold;
+  margin: 10px;
+  background-color: #6441A4;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
