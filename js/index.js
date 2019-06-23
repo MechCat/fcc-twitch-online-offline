@@ -1,6 +1,6 @@
 var selectedTab = "All";
 
-var channels = ["kendinemuzisyen", "jahrein", "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 $(document).ready(function () {
     fillChannels();
@@ -65,8 +65,8 @@ function fillChannels() {
 }
 
 function addChannel(channelName) {
-    channels = [];
-    channels.push(channelName);
+    //channels = [];
+    //channels.push(channelName);
     
-    fillChannels();
+    //fillChannels();
 }
